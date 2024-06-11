@@ -116,7 +116,7 @@ classdef riegoc < handle
                 case 1
                     if (obj.Hs>=0) && (obj.Hs<30)
                         obj.segmentos(); %inicializa los puertos
-                        if(t<=obj.timers(1))
+                        if(t<obj.timers(1))
                             obj.A
                             pause(1)
                             obj.PUNTO
@@ -136,7 +136,7 @@ classdef riegoc < handle
                 case 2
                     if (obj.Hs>=30) && (obj.Hs<=60)
                         obj.segmentos(); %inicializa los puertos
-                        if(t<=obj.timers(2))
+                        if(t<obj.timers(2))
                             obj.A
                             pause(1)
                             obj.PUNTO
@@ -156,7 +156,7 @@ classdef riegoc < handle
                 case 3
                     if (obj.Hs>=60) && (obj.Hs<=100)
                         obj.segmentos(); %inicializa los puertos
-                        if(t<=obj.timers(3))
+                        if(t<obj.timers(3))
                             obj.A
                             pause(1)
                             obj.PUNTO
