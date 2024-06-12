@@ -17,9 +17,9 @@ k=1;
 T=0;
 figure(1)
 uicontrol("Style","pushbutton","String","STOP","Callback","Stop=0")
-t1=input('Dame el tiempo de la humedad baja:_');
+t1=input('Dame el tiempo de la humedad alta:_');
 t2=input('Dame el tiempo de la humedad media:_');
-t3=input('Dame el tiempo de la humedad alta:_');
+t3=input('Dame el tiempo de la humedad baja:_');
 T=[t1 t2 t3];
 r=riegoc(T,h,ts);
 warndlg('Espere un momento!');
